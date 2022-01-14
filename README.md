@@ -1,1 +1,1 @@
-![screenshot](images/nft-screenshot.png)
+![screenshot](images/nft-screenshot.jpg)
