@@ -5,7 +5,7 @@ html {
     padding: 5em;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* margin: 0 auto; */
 }
 body {
     font-family: 'Outfit', sans-serif;
@@ -21,11 +21,12 @@ body {
     background-color: hsl(216, 50%, 16%);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 2%;
+    border-radius: 3%;
     width: 15em;
-    height: 28em;
-    float: none;
-    margin-bottom: 10px;
+    height: 28em;*
+    /* float: none; */
+    /* margin-bottom: 10px; */
+    margin: 0 auto;
     padding: 2em;
 }
 
@@ -62,7 +63,7 @@ body {
     border-radius: 10%;
 }
 
-#nft-image:active {
+#nft-image:hover {
     /* background-image: url("/images/eye.svg"); */
     opacity: 0.5;
 }
@@ -74,7 +75,7 @@ body {
     text-decoration: none;
 }
 
-#nft-title a:active {
+#nft-title a:hover {
     color: hsl(178, 100%, 50%);
     text-decoration: none;
 }
@@ -104,6 +105,7 @@ body {
 
 hr {
     color: hsl(215, 32%, 27%);
+    font-weight: 100;
     width: 95%;
 }
 
@@ -114,6 +116,7 @@ hr {
     align-items: center;
     gap: 10px;
     color: hsl(215, 51%, 70%);
+    font-size: 0.75em;
 }
 
 #creater a {
@@ -121,7 +124,7 @@ hr {
     text-decoration: none;
 }
 
-#creater a:active {
+#creater a:hover {
     color: hsl(178, 100%, 50%);
     text-decoration: none;
 }
