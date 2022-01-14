@@ -34,10 +34,6 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.card:a {
-    color:hsl(178, 100%, 50%);
-}
-
 /* Add some padding inside the card container */
 .container {
     border-radius: 10%;
@@ -52,18 +48,44 @@ body {
     display: flexbox;
     justify-content: center;
     align-items: center;
+    background-color: hsl(178, 100%, 50%);
 }
 
-#nft-title {
+#nft-link {
+    display: flex;
+    height: auto;
+    background-color: hsl(178, 100%, 50%);
+    background-image: url("/images/eye.svg");
+    background-size: 10% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10%;
+}
+
+#nft-image:active {
+    /* background-image: url("/images/eye.svg"); */
+    opacity: 0.5;
+}
+
+#nft-title a {
     font-weight: 600;
     padding: 0 0.5em 0 0.5em;
+    color: white;
+    text-decoration: none;
 }
+
+#nft-title a:active {
+    color: hsl(178, 100%, 50%);
+    text-decoration: none;
+}
+
 #nft-description {
     font-size: 16px;
     font-weight: 300;
     color: hsl(215, 51%, 70%);
     padding: 0 0.5em 0 0.5em;
 }
+
 #nft-info {
     padding: 0 0.5em 0 0.5em;
     font-weight: 600;
@@ -85,15 +107,26 @@ hr {
     width: 95%;
 }
 
-#nft-creator {
+#creator-profile {
     padding: 0 0.5em 0 0.5em;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
+    color: hsl(215, 51%, 70%);
 }
 
-#nft-creator img {
+#creater a {
+    color: white;
+    text-decoration: none;
+}
+
+#creater a:active {
+    color: hsl(178, 100%, 50%);
+    text-decoration: none;
+}
+
+#creator-profile img {
     height: 30px;
     border: 1px solid white;
     border-radius: 50%;
